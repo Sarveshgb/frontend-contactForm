@@ -76,13 +76,13 @@ export const fetchBlogPostById = async (id) => {
     try {
       // Replace with your actual API endpoint
       const response = await fetch(`https://dummyjson.com/posts/${id}`);
-      console.log("444",response)
+     
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       
       const data = await response.json();
-      console.log("4555",data)
+   
       return data;
 
     } catch (error) {
