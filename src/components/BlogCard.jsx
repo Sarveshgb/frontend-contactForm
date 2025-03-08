@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({ post }) => {
-    console.log("post",post)
+
   // Format date for display
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
